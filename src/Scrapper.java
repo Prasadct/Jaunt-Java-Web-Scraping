@@ -14,6 +14,16 @@ public class Scrapper
             UserAgent userAgent = new UserAgent();
             userAgent.visit( "http://www.sonrich.lk/sonrichsys/login.php");
 
+            /**
+             * Login page
+             *
+                <form action="" method="post" >
+                    <div class="formBox"><div class="formBoxTitle">User Name</div><div class="formBoxInput" style="width: 200px;"><input type="text" name="userid" /></div></div>
+                    <div class="formBox"><div class="formBoxTitle">Password</div><div class="formBoxInput" style="width: 200px;"><input type="password" name="passw" /></div></div>
+                    <div class="formBox"><div class="formBoxTitle">&nbsp;</div><div class="formBoxInput" style="width: 200px;"><input type="submit" value="Login" name="loginbutton" /><input type="reset" /></div></div>
+                </form>
+             * */
+            
             Form form = userAgent.doc.getForm(0);       //get the document's first Form
             form.setTextField( "userid", "XXXXX" ); //or form.set("email", "tom@mail.com");
             form.setPassword( "passw", "YYYYYY" );           //or form.set("pw", "secret");
