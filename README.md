@@ -1,4 +1,4 @@
-# scrap-with-Juant
+# Jaunt - Java Web Scraping
 
 Login to a website with username and password.
 Go to a specific page and grap the data from a html table.
